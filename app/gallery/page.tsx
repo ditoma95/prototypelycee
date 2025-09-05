@@ -42,7 +42,7 @@ const additionalPhotos = [
   {
     id: 9,
     type: "image",
-    url:"https://drive.google.com/file/d/1sKUHNpI3g93laOO7rswScmSWATtvt8v6/view?usp=sharing=tinysrgb&w=800" ,
+    url:"https://drive.google.com/file/d/1sKUHNpI3g93laOO7rswScmSWATtvt8v6/view?usp=sharing" ,
     title: "Équipe Pédagogique",
     category: "Équipe"
   },
