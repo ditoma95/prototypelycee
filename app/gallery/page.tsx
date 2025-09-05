@@ -42,7 +42,7 @@ const additionalPhotos = [
   {
     id: 9,
     type: "image",
-    url:https://drive.google.com/file/d/1sKUHNpI3g93laOO7rswScmSWATtvt8v6/view?usp=sharing ,
+    url:"https://drive.google.com/file/d/1sKUHNpI3g93laOO7rswScmSWATtvt8v6/view?usp=sharing=tinysrgb&w=800" ,
     title: "Équipe Pédagogique",
     category: "Équipe"
   },
@@ -61,7 +61,7 @@ const videos = [
   {
     id: 1,
     title: "Présentation du Lycée",
-    thumbnail: https://drive.google.com/file/d/14GNnsUrQcQU-fFbh549v7usJT1nJxeoK/view?usp=sharing,
+    thumbnail: "https://drive.google.com/file/d/14GNnsUrQcQU-fFbh549v7usJT1nJxeoK/view?usp=sharing=tinysrgb&w=800",
     url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     duration: "3:45",
     category: "Présentation"
