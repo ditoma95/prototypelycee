@@ -115,15 +115,15 @@ export default function ContactPage() {
                 <div className="space-y-2">
                   <div>
                     <p className="font-medium">Contact général</p>
-                    <p className="text-gray-600">contact-lpa-nanoro@gmail.com</p>
+                    <p className="text-gray-600">lpananoro1994@gmail.com</p>
                   </div>
                   <div>
                     <p className="font-medium">Inscriptions</p>
-                    <p className="text-gray-600">inscriptions-lpa-nanoro@gmail.com</p>
+                    <p className="text-gray-600">lpananoro1994@gmail.com</p>
                   </div>
                   <div>
                     <p className="font-medium">Direction</p>
-                    <p className="text-gray-600">direction-lpa-nanoro@gmail.com</p>
+                    <p className="text-gray-600">bajonask9@gmail.com</p>
                   </div>
                 </div>
               </CardContent>
