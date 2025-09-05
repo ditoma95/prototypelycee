@@ -42,7 +42,7 @@ export default function ContactPage() {
         >
           <h1 className="text-4xl font-bold text-gray-900 mb-6">Contact & Localisation</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Contactez-nous pour toute information ou visitez notre campus à Nanoro.
+          Contactez-nous pour toute information ou visitez le site de l'établissement.
           </p>
         </motion.div>
 
@@ -81,16 +81,24 @@ export default function ContactPage() {
               <CardContent>
                 <div className="space-y-2">
                   <div>
-                    <p className="font-medium">Secrétariat</p>
-                    <p className="text-gray-600">+226 25 XX XX XX</p>
+                    <p className="font-medium">Secrétariat ( Madame Mariam OUATARA )</p>
+                    <p className="text-gray-600">+226 77 02 67 55</p>
                   </div>
                   <div>
-                    <p className="font-medium">Direction</p>
-                    <p className="text-gray-600">+226 25 XX XX XY</p>
+                    <p className="font-medium">Direction ( Frère Jonas Baky )</p>
+                    <p className="text-gray-600">+226 72 53 03 37</p>
                   </div>
                   <div>
-                    <p className="font-medium">Internat</p>
-                    <p className="text-gray-600">+226 25 XX XX XZ</p>
+                    <p className="font-medium">Intendante ( Mademoiselle Carine )</p>
+                    <p className="text-gray-600">+226 70 60 29 59 </p>
+                  </div>
+                  <div>
+                    <p className="font-medium">Internat garçons ( Monsieur Zongo ) </p>
+                    <p className="text-gray-600">+226 70 48 33 37</p>
+                  </div>
+                  <div>
+                    <p className="font-medium">Internat filles ( Soeur - - - - - - )</p>
+                    <p className="text-gray-600">+226 --  -- --  --</p>
                   </div>
                 </div>
               </CardContent>
@@ -107,15 +115,15 @@ export default function ContactPage() {
                 <div className="space-y-2">
                   <div>
                     <p className="font-medium">Contact général</p>
-                    <p className="text-gray-600">contact@lpa-nanoro.bf</p>
+                    <p className="text-gray-600">contact-lpa-nanoro@gmail.com</p>
                   </div>
                   <div>
                     <p className="font-medium">Inscriptions</p>
-                    <p className="text-gray-600">inscriptions@lpa-nanoro.bf</p>
+                    <p className="text-gray-600">inscriptions-lpa-nanoro@gmail.com</p>
                   </div>
                   <div>
                     <p className="font-medium">Direction</p>
-                    <p className="text-gray-600">direction@lpa-nanoro.bf</p>
+                    <p className="text-gray-600">direction-lpa-nanoro@gmail.com</p>
                   </div>
                 </div>
               </CardContent>
@@ -132,7 +140,7 @@ export default function ContactPage() {
                 <div className="space-y-3">
                   <div className="flex justify-between">
                     <span className="font-medium">Lundi - Vendredi</span>
-                    <span className="text-gray-600">7h30 - 17h00</span>
+                    <span className="text-gray-600">7h30 - 18h00</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="font-medium">Samedi</span>
@@ -191,7 +199,7 @@ export default function ContactPage() {
 
                   <div>
                     <Label htmlFor="telephone">Téléphone</Label>
-                    <Input id="telephone" placeholder="+226 XX XX XX XX" />
+                    <Input id="telephone" placeholder="+226 xx xx xx xx" />
                   </div>
 
                   <div>
@@ -248,7 +256,7 @@ export default function ContactPage() {
             <CardHeader>
               <CardTitle>Localisation</CardTitle>
               <CardDescription>
-                Notre campus se situe au cœur de Nanoro, facilement accessible depuis les principales routes.
+                Notre etablissement se situe au cœur de Nanoro, facilement accessible depuis les principales routes.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -277,7 +285,7 @@ export default function ContactPage() {
                 <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <MapPin className="h-6 w-6 text-green-600" />
                 </div>
-                <CardTitle>Comment s'y rendre</CardTitle>
+                <CardTitle>Comment s'y rendre ?</CardTitle>
               </CardHeader>
               <CardContent className="text-center text-sm text-gray-600">
                 <p>Depuis Ouagadougou : Route Nationale RN1 direction Koudougou, puis RN14 vers Nanoro (90km)</p>
@@ -306,8 +314,8 @@ export default function ContactPage() {
                 <CardTitle>Urgences</CardTitle>
               </CardHeader>
               <CardContent className="text-center text-sm text-gray-600">
-                <p>Numéro d'urgence : +226 25 XX XX XX</p>
-                <p className="mt-2">Infirmerie sur le campus du lundi au vendredi</p>
+                <p>Numéro d'urgence : +226 72 53 03 37</p>
+              <p className="mt-2">Depuis 1993 ,le centre médical de Nanoro dispense des soins de Qualité</p>
               </CardContent>
             </Card>
           </div>
