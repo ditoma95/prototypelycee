@@ -66,7 +66,7 @@ export default function ContactPage() {
                   <p className="font-semibold">Lycée Professionnel Agricole Sainte Anne</p>
                   <p className="text-gray-600">Nanoro, Province du Boulkiemdé</p>
                   <p className="text-gray-600">Région Centre-Ouest, Burkina Faso</p>
-                  <p className="text-gray-600">BP 123 Nanoro</p>
+                  <p className="text-gray-600">B.P : 01 Nanoro</p>
                 </div>
               </CardContent>
             </Card>
