@@ -19,8 +19,8 @@ export default function AboutPage() {
         >
           <h1 className="text-4xl font-bold text-gray-900 mb-6">À Propos du Lycée</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Découvrez l'histoire, la mission et l'équipe pédagogique qui font du LPA Sainte Anne 
-            un établissement d'excellence en formation agricole.
+            Découvrez l'histoire, la mission et l'équipe pédagogique qui font du LPA Sainte Anne de Nanoro
+            un établissement d'excellence en formation agricole et en enseignement général.
           </p>
         </motion.div>
 
@@ -37,14 +37,18 @@ export default function AboutPage() {
             </CardHeader>
             <CardContent className="prose prose-lg max-w-none">
               <p>
-                Fondé en 2009, le Lycée Professionnel Agricole Sainte Anne de Nanoro s'est rapidement imposé 
+                Fondé en 1994 par les frères de la Sainte Famille , le Lycée Professionnel Agricole Sainte Anne de Nanoro s'est rapidement imposé 
                 comme un établissement de référence dans la formation agricole au Burkina Faso. Situé dans la 
                 province du Boulkiemdé, notre lycée bénéficie d'un environnement rural authentique, idéal pour 
-                l'apprentissage des techniques agricoles modernes.
+                l'apprentissage des techniques agricoles modernes.La rigueur et l'excellence font de ce établissement une référence en matière de formation tant dans l'enseignement général que technique.
+                 Premier établissement agricole au Burkina Faso, le Lycée Professionnel Agricol Sainte Anne de Nanoro a ouvert ses portes le 1er juin 1994 sous le décret 94-065/ESS/RSG/DESTP.
+          Le C.A.P industriel ( Agronomie et Zootechnie ) étaient les toutes premières filières agro-sylvo-pastorales disponibles en Cycle court.
+          L'année scolaire 2008-2009 au LPA est marquée par l'introduction de nouvelles offres de formation : La Brevet de Technicien ( BT) et le Bac Professionnel en Agronomie et Zootechnie.
+          Quelques années plutard , le Lycée s'agrandit avec l'ouverture des classes en Enseignement Général ( de la 6e à la terminale scientifique).
               </p>
               <p>
-                Avec plus de 15 années d'expérience, nous avons formé plus de 500 jeunes qui contribuent 
-                aujourd'hui au développement agricole du pays. Notre approche pédagogique allie théorie et 
+                De 1994 à nos jours , nous avons formé plusieurs générations de jeunes talentieux qui contribuent 
+                aujourd'hui au développement agricole de notre chère Pays le Burkina Faso. Notre approche pédagogique allie théorie et 
                 pratique, permettant aux étudiants d'acquérir des compétences solides et directement 
                 applicables sur le terrain.
               </p>
@@ -66,12 +70,16 @@ export default function AboutPage() {
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Target className="h-8 w-8 text-green-600" />
                 </div>
-                <CardTitle>Notre Mission</CardTitle>
+                <CardTitle>Notre Principale Mission</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
                   Former des professionnels compétents en agriculture moderne, capables de contribuer 
-                  au développement durable du secteur agricole burkinabè.
+                  au développement durable du secteur agricole burkinabè et de toute la sous région ouest africaine.
+                  Offrir aux élèves en enseignement général toutes une éducation 
+                  de trés haute qualité leur permettant , aprés 
+                  le Baccalauréat , de poursuivre aussi aisément que possible des études universitaires dans des
+                   filières hautements spécialisées en sciences et technologies. 
                 </p>
               </CardContent>
             </Card>
@@ -161,21 +169,21 @@ export default function AboutPage() {
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="h-8 w-8 text-green-600" />
               </div>
-              <div className="text-3xl font-bold text-gray-900 mb-2">500+</div>
+              <div className="text-3xl font-bold text-gray-900 mb-2">5000+</div>
               <div className="text-gray-600">Diplômés</div>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="h-8 w-8 text-green-600" />
               </div>
-              <div className="text-3xl font-bold text-gray-900 mb-2">95%</div>
+              <div className="text-3xl font-bold text-gray-900 mb-2">98%</div>
               <div className="text-gray-600">Taux de Réussite</div>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <BookOpen className="h-8 w-8 text-green-600" />
               </div>
-              <div className="text-3xl font-bold text-gray-900 mb-2">25</div>
+              <div className="text-3xl font-bold text-gray-900 mb-2">35</div>
               <div className="text-gray-600">Professeurs</div>
             </div>
             <div className="text-center">
