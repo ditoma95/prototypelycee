@@ -14,47 +14,81 @@ const additionalPhotos = [
   {
     id: 5,
     type: "image",
-    url: "https://images.pexels.com/photos/2280547/pexels-photo-2280547.jpeg?auto=compress&cs=tinysrgb&w=800",
+    url: "/slides/s1.jpg",
     title: "Salle de Classe Moderne",
     category: "Infrastructure"
   },
   {
     id: 6,
     type: "image", 
-    url: "https://images.pexels.com/photos/1595108/pexels-photo-1595108.jpeg?auto=compress&cs=tinysrgb&w=800",
+    url: "/slides/s2.jpg",
     title: "Formation Pratique",
     category: "Formation"
   },
   {
     id: 7,
     type: "image",
-    url: "https://images.pexels.com/photos/5212700/pexels-photo-5212700.jpeg?auto=compress&cs=tinysrgb&w=800",
+    url: "/slides/s3.jpg",
     title: "Atelier de Transformation",
     category: "Formation"
   },
   {
     id: 8,
     type: "image",
-    url: "https://images.pexels.com/photos/974314/pexels-photo-974314.jpeg?auto=compress&cs=tinysrgb&w=800",
+    url: "/slides/s4.jpg",
     title: "Cultures Expérimentales",
     category: "Formation"
   },
   {
     id: 9,
     type: "image",
-    url:"https://drive.google.com/file/d/1sKUHNpI3g93laOO7rswScmSWATtvt8v6/view?usp=sharing" ,
+    url: "/slides/s5.jpg",
     title: "Équipe Pédagogique",
     category: "Équipe"
   },
   {
     id: 10,
     type: "image",
-    url: "https://images.pexels.com/photos/5029857/pexels-photo-5029857.jpeg?auto=compress&cs=tinysrgb&w=800",
+    url: "/slides/s6.jpg",
     title: "Laboratoire de Recherche",
     category: "Équipements"
+  },
+  {
+    id: 11,
+    type: "image",
+    url: "/slides/s7.jpg",
+    title: "Bibliothèque et Centre de Ressources",
+    category: "Infrastructure"
+  },
+  {
+    id: 12,
+    type: "image",
+    url: "/slides/s8.jpg",
+    title: "Travaux Pratiques en Agriculture",
+    category: "Formation"
+  },
+  {
+    id: 13,
+    type: "image",
+    url: "/slides/s9.jpg",
+    title: "Cérémonie de Remise des Diplômes",
+    category: "Événements"
+  },
+  {
+    id: 14,
+    type: "image",
+    url: "/slides/s10.jpg",
+    title: "Visite de Terrain",
+    category: "Formation"
+  },
+  {
+    id: 15,
+    type: "image",
+    url: "/slides/s11.jpg",
+    title: "Projets Étudiants Innovants",
+    category: "Projets"
   }
 ];
-
 const allMedia = [...mockGallery, ...additionalPhotos];
 
 const videos = [

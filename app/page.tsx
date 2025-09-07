@@ -1,25 +1,97 @@
 "use client";
 
-import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { ArrowRight, Users, BookOpen, Award, Calendar, MapPin, Phone, Mail } from 'lucide-react';
-import Link from 'next/link';
-import { mockNews, mockEvents } from '@/lib/mock-data';
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import {
+  ArrowRight,
+  Users,
+  BookOpen,
+  Award,
+  Calendar,
+  MapPin,
+  Phone,
+  Mail,
+} from "lucide-react";
+import Link from "next/link";
+import { mockNews, mockEvents } from "@/lib/mock-data";
 
 export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-green-600 via-green-700 to-green-800 text-white py-20 lg:py-32">
-        <div className="absolute inset-0 bg-black/20"></div>
+      <section className="relative bg-gradient-to-br from-green-600 via-green-700 to-green-800 text-white py-20 lg:py-32 overflow-hidden">
+        {/* Conteneur du diaporama */}
+        <div className="absolute inset-0 bg-black/20">
+          {/*
+            Slideshow delay per slide (in seconds)
+            You can adjust this value for faster/slower transitions
+          */}
+          {(() => {
+            const SLIDE_DELAY = 1.5; // seconds
+            const SLIDE_DURATION = 12; // seconds (should match @keyframes)
+            const images = [
+              "/slides/s1.jpg",
+              "/slides/s2.jpg",
+              "/slides/s3.jpg",
+              "/slides/s4.jpg",
+              "/slides/s5.jpg",
+              "/slides/s6.jpg",
+              "/slides/s7.jpg",
+              "/slides/s8.jpg",
+              "/slides/s9.jpg",
+              "/slides/s10.jpg",
+              "/slides/s11.jpg",
+            ];
+            return images.map((image, index) => (
+              <div
+                key={index}
+                className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${
+                  index === 0 ? "opacity-100" : "opacity-0"
+                }`}
+                style={{
+                  backgroundImage: `url(${image})`,
+                  animation: `slideshow ${SLIDE_DURATION}s infinite ${index * SLIDE_DELAY}s`,
+                }}
+              ></div>
+            ));
+          })()}
+        </div>
+
+        {/* Styles pour l'animation du diaporama */}
+        <style jsx>{`
+          @keyframes slideshow {
+            0% {
+              opacity: 0;
+            }
+            8.33% {
+              opacity: 1;
+            }
+            33.33% {
+              opacity: 1;
+            }
+            41.66% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 0;
+            }
+          }
+        `}</style>
+
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center"
+            className="text-center relative z-10"
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Lycée Professionnel Agricole
@@ -27,16 +99,24 @@ export default function HomePage() {
               <span className="text-yellow-300">Sainte Anne</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-green-100 max-w-3xl mx-auto">
-              Formation d'excellence en agriculture moderne à Nanoro, Burkina Faso
+              Formation d&apos;excellence en agriculture moderne à Nanoro, Burkina
+              Faso
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
+              <Button
+                size="lg"
+                className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold"
+              >
                 <Link href="/registration" className="flex items-center">
-                  S'inscrire maintenant
+                  S&apos;inscrire maintenant
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-green-700">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-green-700"
+              >
                 <Link href="/about">Découvrir le lycée</Link>
               </Button>
             </div>
@@ -79,7 +159,7 @@ export default function HomePage() {
                 <Calendar className="h-8 w-8 text-green-600" />
               </div>
               <div className="text-3xl font-bold text-gray-900 mb-2">15</div>
-              <div className="text-gray-600">Ans d'Expérience</div>
+              <div className="text-gray-600">Ans d&apos;Expérience</div>
             </div>
           </motion.div>
         </div>
@@ -94,9 +174,12 @@ export default function HomePage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Dernières Actualités</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Dernières Actualités
+            </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              Suivez les dernières nouvelles et événements de notre établissement
+              Suivez les dernières nouvelles et événements de notre
+              établissement
             </p>
           </motion.div>
 
@@ -121,7 +204,9 @@ export default function HomePage() {
                   </div>
                   <CardHeader>
                     <CardTitle className="line-clamp-2">{news.title}</CardTitle>
-                    <CardDescription>{new Date(news.date).toLocaleDateString('fr-FR')}</CardDescription>
+                    <CardDescription>
+                      {new Date(news.date).toLocaleDateString("fr-FR")}
+                    </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-600 line-clamp-3">{news.excerpt}</p>
@@ -154,7 +239,9 @@ export default function HomePage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Événements à Venir</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Événements à Venir
+            </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
               Ne manquez aucun événement important de notre calendrier scolaire
             </p>
@@ -173,7 +260,7 @@ export default function HomePage() {
                     <div className="flex justify-between items-start">
                       <CardTitle className="text-lg">{event.title}</CardTitle>
                       <Badge variant="outline" className="shrink-0">
-                        {new Date(event.date).toLocaleDateString('fr-FR')}
+                        {new Date(event.date).toLocaleDateString("fr-FR")}
                       </Badge>
                     </div>
                     <div className="flex items-center text-sm text-gray-500 mt-2">
@@ -213,16 +300,21 @@ export default function HomePage() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h2 className="text-3xl font-bold mb-6">Rejoignez-nous pour une Formation d'Excellence</h2>
+            <h2 className="text-3xl font-bold mb-6">
+              Rejoignez-nous pour une Formation d&apos;Excellence
+            </h2>
             <p className="text-xl mb-8 text-green-100 max-w-3xl mx-auto">
-              Découvrez nos programmes de formation en agriculture moderne et préparez votre avenir professionnel
+              Découvrez nos programmes de formation en agriculture moderne et
+              préparez votre avenir professionnel
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
               <div className="text-center">
                 <div className="bg-white/20 rounded-lg p-6">
                   <MapPin className="h-8 w-8 mx-auto mb-4" />
                   <h3 className="font-semibold mb-2">Adresse</h3>
-                  <p className="text-green-100">Nanoro, Province du Boulkiemdé, Burkina Faso</p>
+                  <p className="text-green-100">
+                    Nanoro, Province du Boulkiemdé, Burkina Faso
+                  </p>
                 </div>
               </div>
               <div className="text-center">
@@ -240,7 +332,10 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100">
+            <Button
+              size="lg"
+              className="bg-white text-green-600 hover:bg-gray-100"
+            >
               <Link href="/contact">
                 Nous Contacter
                 <ArrowRight className="ml-2 h-5 w-5" />
